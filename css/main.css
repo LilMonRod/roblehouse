@@ -1,0 +1,332 @@
+body {
+	margin: 0;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	color: #000;
+}
+
+h1 {
+	text-align: center;
+	color: #248533;
+}
+
+/*Estilos de la galeria*/
+
+.galeria {
+	width: 100%;
+	margin: 0 auto;
+	list-style: none;
+	padding: 24px;
+	box-sizing: border-box;
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.galeria li {
+	max-width: 400px;
+	height: 200px;
+	width: 23%;
+	margin: 10px 5px;
+}
+
+.galeria a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.galeria img {
+	width: 100%;
+	height: 100%;
+}
+
+/*Estilos del modal*/
+
+.modal {
+	display: none;
+}
+
+.modal:target {
+	display: block;
+	position: fixed;
+	background: rgba(0,0,0,0.8);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.modal h3 {
+	color: #fff;
+	font-size: 30px;
+	text-align: center;
+	margin: 15px 0;
+}
+
+.imagen {
+	width: 100%;
+	height: 50%;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.imagen a {
+	color: #fff;
+	font-size: 40px;
+	text-decoration: none;
+	margin: 0 10px;
+}
+
+.imagen a:nth-child(2) {
+	margin: 0;
+	height: 100%;
+	flex-shrink: 2;
+}
+
+.imagen img {
+	width: 500px;
+	height: 100%;
+	max-width: 100%;
+	border: 7px solid #fff;
+	box-sizing: border-box;
+}
+
+.cerrar {
+	display: block;
+	background: #fff;
+	width: 25px;
+	height: 25px;
+	margin: 15px auto;
+	text-align: center;
+	text-decoration: none;
+	font-size: 25px;
+	color: #000;
+	padding: 5px;
+	border-radius: 50%;
+	line-height: 25px;
+}
+
+a,
+p,
+li,
+span {
+	font: 1.1rem sans-serif;
+	color: #000;
+}
+
+p span {
+	font-weight: bold;
+}
+
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+	width: 90%;
+}
+
+.wrapper-texts {
+	max-width: 1000px;
+	margin: 0 auto;
+	width: 95%;
+}
+
+.wrapper-texts > p {
+   margin: 12px 0;
+}
+
+.wrapper-texts > ul {
+	margin: 10px 0;
+ }
+ 
+
+
+.btn-container {
+	padding: 10px 0;
+}
+
+.hero-image {
+	height: 240px;
+	width: 100%;
+	max-width: 900px;
+	margin: 0 auto;
+	background-image: url('../img/roble/hero-image.jpeg');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.tocontact {
+	text-decoration: none;
+	color: #fff;
+	padding: 10px 15px;
+	border-radius: 50px;
+	background-color: #22622C;
+}
+
+.tocontact:hover {
+	color: rgb(245, 234, 225);
+	padding: 10px 15px;
+	
+	background: rgba(34,98,44,1);
+	background: -moz-linear-gradient(-45deg, rgba(34,98,44,1) 0%, rgba(68,163,83,1) 45%, rgba(34,98,44,1) 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(34,98,44,1)), color-stop(45%, rgba(68,163,83,1)), color-stop(100%, rgba(34,98,44,1)));
+	background: -webkit-linear-gradient(-45deg, rgba(34,98,44,1) 0%, rgba(68,163,83,1) 45%, rgba(34,98,44,1) 100%);
+	background: -o-linear-gradient(-45deg, rgba(34,98,44,1) 0%, rgba(68,163,83,1) 45%, rgba(34,98,44,1) 100%);
+	background: -ms-linear-gradient(-45deg, rgba(34,98,44,1) 0%, rgba(68,163,83,1) 45%, rgba(34,98,44,1) 100%);
+	background: linear-gradient(135deg, rgba(34,98,44,1) 0%, rgba(68,163,83,1) 45%, rgba(34,98,44,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#22622c', endColorstr='#22622c', GradientType=1 );
+}
+
+.contact-container {
+	padding: 20px 5%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+footer {
+	background: rgb(34, 98, 44);
+}
+
+footer a,
+footer p,
+footer span {
+	color: #fff;
+}
+
+.contact__title {
+	color: #fff;
+	font-size: 1.2rem;
+}
+
+.contact-container > li {
+	margin: 20px 0;
+	padding: 0;
+	list-style: none;
+}
+
+.contact__link {
+	text-decoration: none;
+	color: #fff;
+}
+
+.contact__link:hover {
+	text-decoration: underline solid #ccc9c9;
+}
+
+.contact__icons--mail::before {
+	background-image: url(../img/icons/email.png);
+	content: "";
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: inline-block;
+	height: 16px;
+	margin-right: 10px;
+	position: relative;
+	top: 4px;
+	width: 16px;
+}
+
+.contact__icons--phone::before {
+	background-image: url(../img/icons/smartphone.png);
+	content: "";
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 16px;
+	margin-right: 10px;
+	position: relative;
+	top: 4px;
+	width: 16px;
+}
+
+.contact__icons--person {
+	margin: 10px 0;
+}
+
+.contact__icons--person::before {
+	background-image: url(../img/icons/woman.png);
+	content: "";
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: inline-block;
+	height: 16px;
+	margin-right: 10px;
+	position: relative;
+	top: 4px;
+	width: 16px;
+}
+
+.container__info {
+	max-width: 300px;
+	width: 40%;
+	display: inline;
+}
+
+.container__info + .container__info {
+	margin-left: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+	.galeria li {
+		height: 200px;
+		width: 30%;
+	}
+
+	.container__info {
+		width: 45%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.galeria li {
+		height: 150px;
+		width: 45%;
+    }
+
+	.container__info {
+		display: block;
+		width: 100%;
+	}
+
+	.contact__title {
+		color: #fff;
+		font-size: 1.16rem;
+	}
+
+	a,
+	p,
+	li,
+	span {
+		font: 1em sans-serif;
+	}
+	.container__info + .container__info {
+		margin-left: 0;
+		margin-top: 10px;
+	}
+
+	.contact__icons--mail::before {
+		height: 16px;
+		width: 16px;
+	}
+	.contact__icons--phone::before {
+		height: 16px;
+		width: 16px;
+	}
+	.contact__icons--person::before {
+		height: 16px;
+		width: 16px;
+	}
+	
+}
+
+
+@media only screen and (max-width: 500px) {
+	.galeria li {
+		height: 150px;
+		width: 100%;
+	}
+}
