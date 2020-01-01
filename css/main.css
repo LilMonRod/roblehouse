@@ -23,6 +23,10 @@ h1 {
 	color: #248533;
 }
 
+.price {
+    font-size: 1.19em;
+}
+
 /*Estilos de la galeria*/
 
 .galeria {
@@ -317,6 +321,11 @@ footer span {
 	span {
 		font: 1em sans-serif;
 	}
+
+	.price {
+		font-size: 1.1em;
+	}
+
 	.container__info + .container__info {
 		margin-left: 0;
 		margin-top: 10px;
